@@ -25,5 +25,5 @@ class Parser:
 
 class ResourceParser(Parser):
     extensions = [".jpg", ".png", ".gif", ".css",".html"]
-    def parser(self, path: Path, source: Path, dest: Path):
-        self.copy(path, source, dest)
+    def parse(self, path: Path, source: Path, dest: Path):
+        copy(path, source, dest)
